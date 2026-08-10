@@ -1,6 +1,6 @@
 //package store.code.message.way1.extend;
 //
-//import artoria.common.AsyncCallback;
+//import kunlun.common.AsyncCallback;
 //import artoria.lifecycle.LifecycleException;
 //import org.apache.kafka.clients.producer.ProducerRecord;
 //import org.springframework.kafka.core.KafkaTemplate;

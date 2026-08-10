@@ -1,86 +1,86 @@
 package store.code.extension.pay.way1;
 
-import artoria.common.GenericResult;
-import artoria.data.AbstractExtraData;
-import artoria.data.RawData;
+// import artoria.common.GenericResult;
+// import artoria.data.AbstractExtraData;
+// import artoria.data.RawData;
 
-import java.io.Serializable;
+// import java.io.Serializable;
 
-public class OrderPayResult extends AbstractExtraData implements RawData, GenericResult, Serializable {
-    private Object rawData;
-    private String code;
-    private String message;
-    private String appId;
-    private String appType;
-    private String payWay;
-    private Object payResult;
+// public class OrderPayResult extends AbstractExtraData implements RawData, GenericResult, Serializable {
+//     private Object rawData;
+//     private String code;
+//     private String message;
+//     private String appId;
+//     private String appType;
+//     private String payWay;
+//     private Object payResult;
 
-    @Override
-    public Object rawData() {
+//     @Override
+//     public Object rawData() {
 
-        return rawData;
-    }
+//         return rawData;
+//     }
 
-    @Override
-    public void rawData(Object rawData) {
+//     @Override
+//     public void rawData(Object rawData) {
 
-        this.rawData = rawData;
-    }
+//         this.rawData = rawData;
+//     }
 
-    @Override
-    public String getCode() {
+//     @Override
+//     public String getCode() {
 
-        return code;
-    }
+//         return code;
+//     }
 
-    @Override
-    public void setCode(String code) {
+//     @Override
+//     public void setCode(String code) {
 
-        this.code = code;
-    }
+//         this.code = code;
+//     }
 
-    @Override
-    public String getMessage() {
+//     @Override
+//     public String getMessage() {
 
-        return message;
-    }
+//         return message;
+//     }
 
-    @Override
-    public void setMessage(String message) {
+//     @Override
+//     public void setMessage(String message) {
 
-        this.message = message;
-    }
+//         this.message = message;
+//     }
 
-    public String getAppId() {
-        return appId;
-    }
+//     public String getAppId() {
+//         return appId;
+//     }
 
-    public void setAppId(String appId) {
-        this.appId = appId;
-    }
+//     public void setAppId(String appId) {
+//         this.appId = appId;
+//     }
 
-    public String getAppType() {
-        return appType;
-    }
+//     public String getAppType() {
+//         return appType;
+//     }
 
-    public void setAppType(String appType) {
-        this.appType = appType;
-    }
+//     public void setAppType(String appType) {
+//         this.appType = appType;
+//     }
 
-    public String getPayWay() {
-        return payWay;
-    }
+//     public String getPayWay() {
+//         return payWay;
+//     }
 
-    public void setPayWay(String payWay) {
-        this.payWay = payWay;
-    }
+//     public void setPayWay(String payWay) {
+//         this.payWay = payWay;
+//     }
 
-    public Object getPayResult() {
-        return payResult;
-    }
+//     public Object getPayResult() {
+//         return payResult;
+//     }
 
-    public void setPayResult(Object payResult) {
-        this.payResult = payResult;
-    }
+//     public void setPayResult(Object payResult) {
+//         this.payResult = payResult;
+//     }
 
-}
+// }

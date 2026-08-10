@@ -1,90 +1,90 @@
 package store.code.storage.way1;
 
-import artoria.data.AbstractExtraData;
+// import artoria.data.AbstractExtraData;
 
-import java.io.Serializable;
+// import java.io.Serializable;
 
-/**
- * Object storage authorization result.
- * @author Kahle
- */
-public class AuthorizationResult extends AbstractExtraData implements Serializable {
-    private String accessId;
-    private String host;
-    private String directory;
-    private String policy;
-    private String signature;
-    private Long expireTime;
-    private String callbackContent;
+// /**
+//  * Object storage authorization result.
+//  * @author Kahle
+//  */
+// public class AuthorizationResult extends AbstractExtraData implements Serializable {
+//     private String accessId;
+//     private String host;
+//     private String directory;
+//     private String policy;
+//     private String signature;
+//     private Long expireTime;
+//     private String callbackContent;
 
-    public String getAccessId() {
+//     public String getAccessId() {
 
-        return accessId;
-    }
+//         return accessId;
+//     }
 
-    public void setAccessId(String accessId) {
+//     public void setAccessId(String accessId) {
 
-        this.accessId = accessId;
-    }
+//         this.accessId = accessId;
+//     }
 
-    public String getHost() {
+//     public String getHost() {
 
-        return host;
-    }
+//         return host;
+//     }
 
-    public void setHost(String host) {
+//     public void setHost(String host) {
 
-        this.host = host;
-    }
+//         this.host = host;
+//     }
 
-    public String getDirectory() {
+//     public String getDirectory() {
 
-        return directory;
-    }
+//         return directory;
+//     }
 
-    public void setDirectory(String directory) {
+//     public void setDirectory(String directory) {
 
-        this.directory = directory;
-    }
+//         this.directory = directory;
+//     }
 
-    public String getPolicy() {
+//     public String getPolicy() {
 
-        return policy;
-    }
+//         return policy;
+//     }
 
-    public void setPolicy(String policy) {
+//     public void setPolicy(String policy) {
 
-        this.policy = policy;
-    }
+//         this.policy = policy;
+//     }
 
-    public String getSignature() {
+//     public String getSignature() {
 
-        return signature;
-    }
+//         return signature;
+//     }
 
-    public void setSignature(String signature) {
+//     public void setSignature(String signature) {
 
-        this.signature = signature;
-    }
+//         this.signature = signature;
+//     }
 
-    public Long getExpireTime() {
+//     public Long getExpireTime() {
 
-        return expireTime;
-    }
+//         return expireTime;
+//     }
 
-    public void setExpireTime(Long expireTime) {
+//     public void setExpireTime(Long expireTime) {
 
-        this.expireTime = expireTime;
-    }
+//         this.expireTime = expireTime;
+//     }
 
-    public String getCallbackContent() {
+//     public String getCallbackContent() {
 
-        return callbackContent;
-    }
+//         return callbackContent;
+//     }
 
-    public void setCallbackContent(String callbackContent) {
+//     public void setCallbackContent(String callbackContent) {
 
-        this.callbackContent = callbackContent;
-    }
+//         this.callbackContent = callbackContent;
+//     }
 
-}
+// }

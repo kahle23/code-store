@@ -1,54 +1,54 @@
 package store.code.lock.way1;
 
-import artoria.logging.Logger;
-import artoria.logging.LoggerFactory;
-import artoria.util.Assert;
+// import artoria.logging.Logger;
+// import artoria.logging.LoggerFactory;
+// import artoria.util.Assert;
 
-import java.util.concurrent.TimeUnit;
+// import java.util.concurrent.TimeUnit;
 
-/**
- * Lock tools.
- * @author Kahle
- */
-public class LockUtils {
-    private static final Locker DEFAULT_LOCKER = new ReentrantLocker();
-    private static Logger log = LoggerFactory.getLogger(LockUtils.class);
-    private static Locker locker;
+// /**
+//  * Lock tools.
+//  * @author Kahle
+//  */
+// public class LockUtils {
+//     private static final Locker DEFAULT_LOCKER = new ReentrantLocker();
+//     private static Logger log = LoggerFactory.getLogger(LockUtils.class);
+//     private static Locker locker;
 
-    public static Locker getLocker() {
+//     public static Locker getLocker() {
 
-        return locker != null ? locker : DEFAULT_LOCKER;
-    }
+//         return locker != null ? locker : DEFAULT_LOCKER;
+//     }
 
-    public static void setLocker(Locker locker) {
-        Assert.notNull(locker, "Parameter \"locker\" must not null. ");
-        log.info("Set locker: {}", locker.getClass().getName());
-        LockUtils.locker = locker;
-    }
+//     public static void setLocker(Locker locker) {
+//         Assert.notNull(locker, "Parameter \"locker\" must not null. ");
+//         log.info("Set locker: {}", locker.getClass().getName());
+//         LockUtils.locker = locker;
+//     }
 
-    public static void lock(String lockName) {
+//     public static void lock(String lockName) {
 
-        getLocker().lock(lockName);
-    }
+//         getLocker().lock(lockName);
+//     }
 
-    public static void unlock(String lockName) {
+//     public static void unlock(String lockName) {
 
-        getLocker().unlock(lockName);
-    }
+//         getLocker().unlock(lockName);
+//     }
 
-    public static void lockInterruptibly(String lockName) throws InterruptedException {
+//     public static void lockInterruptibly(String lockName) throws InterruptedException {
 
-        getLocker().lockInterruptibly(lockName);
-    }
+//         getLocker().lockInterruptibly(lockName);
+//     }
 
-    public static boolean tryLock(String lockName) {
+//     public static boolean tryLock(String lockName) {
 
-        return getLocker().tryLock(lockName);
-    }
+//         return getLocker().tryLock(lockName);
+//     }
 
-    public static boolean tryLock(String lockName, long time, TimeUnit unit) throws InterruptedException {
+//     public static boolean tryLock(String lockName, long time, TimeUnit unit) throws InterruptedException {
 
-        return getLocker().tryLock(lockName, time, unit);
-    }
+//         return getLocker().tryLock(lockName, time, unit);
+//     }
 
-}
+// }

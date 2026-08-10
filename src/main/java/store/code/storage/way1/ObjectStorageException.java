@@ -1,31 +1,31 @@
 package store.code.storage.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * Object storage exception.
- * @author Kahle
- */
-public class ObjectStorageException extends UncheckedException {
+// /**
+//  * Object storage exception.
+//  * @author Kahle
+//  */
+// public class ObjectStorageException extends UncheckedException {
 
-    public ObjectStorageException() {
+//     public ObjectStorageException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public ObjectStorageException(String message) {
+//     public ObjectStorageException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public ObjectStorageException(Throwable cause) {
+//     public ObjectStorageException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public ObjectStorageException(String message, Throwable cause) {
+//     public ObjectStorageException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

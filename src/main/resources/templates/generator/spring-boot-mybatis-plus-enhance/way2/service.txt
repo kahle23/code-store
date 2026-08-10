@@ -1,0 +1,74 @@
+package ${servicePackageName};
+
+import baibao.extension.mybatisplus.BaseService;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.github.yulichang.base.MPJBaseService;
+import kunlun.common.Page;
+import kunlun.io.fileprocessor.ProcResult;
+import org.springframework.web.multipart.MultipartFile;
+import ${entityPackageName}.${entityClassName};
+import ${addParamPackageName}.${addParamClassName};
+import ${editParamPackageName}.${editParamClassName};
+import ${queryPackageName}.${queryClassName};
+import ${resultPackageName}.${resultClassName};
+import ${smpResultPackageName}.${smpResultClassName};
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+
+/**
+ * $!{table.comment}的服务类.
+ *
+ * @author $!{author}
+ * @since $!{nowDate}
+ */
+public interface ${serviceClassName} extends BaseService<${entityClassName}
+        , ${addParamClassName}, ${editParamClassName}, ${queryClassName}, ${resultClassName}> {
+
+    /**
+     * 增加$!{table.comment}数据.
+     *
+     * @param param 待增加的数据
+     * @return 增加的记录的ID
+     */
+    Long addRecord(${addParamClassName} param);
+
+    /**
+     * 编辑$!{table.comment}数据.
+     *
+     * @param param 待编辑的数据
+     */
+    void editRecord(${editParamClassName} param);
+
+    /**
+     * 批量编辑$!{table.comment}数据.
+     * @param params 待批量编辑的数据
+     * @param needDel 是否需要删除
+     */
+    void batchEdit(List<${editParamClassName}> params, boolean needDel);
+
+    /**
+     * $!{table.comment}的数据下拉列表
+     *
+     * @param query 查询条件
+     * @return 查询结果
+     */
+    List<${smpResultClassName}> selectList(${queryClassName} query);
+
+    /**
+     * 批量导入$!{table.comment}数据.
+     * @param file 导入的文件
+     * @return 导入任务信息
+     */
+    ProcResult importRecords(MultipartFile file);
+
+    /**
+     * 批量导出$!{table.comment}数据.
+     * @param query 查询条件
+     * @return 导出任务信息
+     */
+    ProcResult exportRecords(${queryClassName} query);
+
+}

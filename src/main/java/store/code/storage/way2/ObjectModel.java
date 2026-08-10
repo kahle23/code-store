@@ -1,45 +1,45 @@
 package store.code.storage.way2;
 
-import artoria.data.AbstractExtraData;
+// import artoria.data.AbstractExtraData;
 
-import java.io.Serializable;
+// import java.io.Serializable;
 
-public class ObjectModel extends AbstractExtraData implements Serializable {
-    /**
-     * Object's bucket name.
-     */
-    private String bucketName;
-    /**
-     * Object key (name).
-     */
-    private String objectKey;
+// public class ObjectModel extends AbstractExtraData implements Serializable {
+//     /**
+//      * Object's bucket name.
+//      */
+//     private String bucketName;
+//     /**
+//      * Object key (name).
+//      */
+//     private String objectKey;
 
-    public ObjectModel() {
-    }
+//     public ObjectModel() {
+//     }
 
-    public ObjectModel(String bucketName, String objectKey) {
-        this.bucketName = bucketName;
-        this.objectKey = objectKey;
-    }
+//     public ObjectModel(String bucketName, String objectKey) {
+//         this.bucketName = bucketName;
+//         this.objectKey = objectKey;
+//     }
 
-    public String getBucketName() {
+//     public String getBucketName() {
 
-        return bucketName;
-    }
+//         return bucketName;
+//     }
 
-    public void setBucketName(String bucketName) {
+//     public void setBucketName(String bucketName) {
 
-        this.bucketName = bucketName;
-    }
+//         this.bucketName = bucketName;
+//     }
 
-    public String getObjectKey() {
+//     public String getObjectKey() {
 
-        return objectKey;
-    }
+//         return objectKey;
+//     }
 
-    public void setObjectKey(String objectKey) {
+//     public void setObjectKey(String objectKey) {
 
-        this.objectKey = objectKey;
-    }
+//         this.objectKey = objectKey;
+//     }
 
-}
+// }

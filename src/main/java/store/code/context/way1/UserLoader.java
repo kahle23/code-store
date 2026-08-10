@@ -1,9 +1,9 @@
 package store.code.context.way1;
 
-import artoria.common.Loader;
+// import artoria.common.Loader;
 
-public interface UserLoader extends Loader {
+// public interface UserLoader extends Loader {
 
-    UserInfo load(Object input);
+//     UserInfo load(Object input);
 
-}
+// }

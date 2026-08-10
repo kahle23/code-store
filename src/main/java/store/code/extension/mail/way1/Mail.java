@@ -1,67 +1,67 @@
 package store.code.extension.mail.way1;
 
-import artoria.data.ExtraData;
-import artoria.data.RawData;
+// import artoria.data.ExtraData;
+// import artoria.data.RawData;
 
-import java.util.Date;
-import java.util.Map;
+// import java.util.Date;
+// import java.util.Map;
 
-public interface Mail extends ExtraData, RawData {
+// public interface Mail extends ExtraData, RawData {
 
-    String getId();
+//     String getId();
 
-    void setId(String id);
+//     void setId(String id);
 
-    String getFrom();
+//     String getFrom();
 
-    void setFrom(String from);
+//     void setFrom(String from);
 
-    String getReplyTo();
+//     String getReplyTo();
 
-    void setReplyTo(String replyTo);
+//     void setReplyTo(String replyTo);
 
-    String getTo();
+//     String getTo();
 
-    void setTo(String to);
+//     void setTo(String to);
 
-    String getCc();
+//     String getCc();
 
-    void setCc(String cc);
+//     void setCc(String cc);
 
-    String getBcc();
+//     String getBcc();
 
-    void setBcc(String bcc);
+//     void setBcc(String bcc);
 
-    Date getSentDate();
+//     Date getSentDate();
 
-    void setSentDate(Date sentDate);
+//     void setSentDate(Date sentDate);
 
-    String getCharset();
+//     String getCharset();
 
-    void setCharset(String charset);
+//     void setCharset(String charset);
 
-    String getSubject();
+//     String getSubject();
 
-    void setSubject(String subject);
+//     void setSubject(String subject);
 
-    String getContent();
+//     String getContent();
 
-    void setContent(String content);
-
-
-    Object getAttachment(String attachmentName);
-
-    void addAttachment(String attachmentName, Object attachmentContent);
-
-    void addAttachments(Map<String, String> attachments);
-
-    boolean containsAttachment(String attachmentName);
-
-    void removeAttachment(String attachmentName);
-
-    Map<String, Object> getAttachments();
-
-    void clearAttachments();
+//     void setContent(String content);
 
 
-}
+//     Object getAttachment(String attachmentName);
+
+//     void addAttachment(String attachmentName, Object attachmentContent);
+
+//     void addAttachments(Map<String, String> attachments);
+
+//     boolean containsAttachment(String attachmentName);
+
+//     void removeAttachment(String attachmentName);
+
+//     Map<String, Object> getAttachments();
+
+//     void clearAttachments();
+
+
+// }

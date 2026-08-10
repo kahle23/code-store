@@ -1,27 +1,27 @@
 package store.code.storage.way1;
 
-import artoria.data.AbstractExtraData;
+// import artoria.data.AbstractExtraData;
 
-import java.io.Serializable;
+// import java.io.Serializable;
 
-/**
- * The stored result of the object.
- * @author Kahle
- */
-public class StorageResult extends AbstractExtraData implements Serializable {
-    /**
-     * Business id.
-     */
-    private String businessId;
+// /**
+//  * The stored result of the object.
+//  * @author Kahle
+//  */
+// public class StorageResult extends AbstractExtraData implements Serializable {
+//     /**
+//      * Business id.
+//      */
+//     private String businessId;
 
-    public String getBusinessId() {
+//     public String getBusinessId() {
 
-        return businessId;
-    }
+//         return businessId;
+//     }
 
-    public void setBusinessId(String businessId) {
+//     public void setBusinessId(String businessId) {
 
-        this.businessId = businessId;
-    }
+//         this.businessId = businessId;
+//     }
 
-}
+// }

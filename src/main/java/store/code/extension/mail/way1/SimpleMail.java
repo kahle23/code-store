@@ -1,198 +1,198 @@
 package store.code.extension.mail.way1;
 
-import artoria.data.AbstractExtraData;
+// import artoria.data.AbstractExtraData;
 
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+// import java.util.Collections;
+// import java.util.Date;
+// import java.util.HashMap;
+// import java.util.Map;
 
-public class SimpleMail extends AbstractExtraData implements Mail {
-    private Map<String, Object> attachmentMap = new HashMap<String, Object>();
-    private Object rawData;
-    private String id;
-    private String from;
-    private String replyTo;
-    private String to;
-    private String cc;
-    private String bcc;
-    private Date sentDate;
-    private String charset;
-    private String subject;
-    private String content;
+// public class SimpleMail extends AbstractExtraData implements Mail {
+//     private Map<String, Object> attachmentMap = new HashMap<String, Object>();
+//     private Object rawData;
+//     private String id;
+//     private String from;
+//     private String replyTo;
+//     private String to;
+//     private String cc;
+//     private String bcc;
+//     private Date sentDate;
+//     private String charset;
+//     private String subject;
+//     private String content;
 
-    @Override
-    public String getId() {
+//     @Override
+//     public String getId() {
 
-        return id;
-    }
+//         return id;
+//     }
 
-    @Override
-    public void setId(String id) {
+//     @Override
+//     public void setId(String id) {
 
-        this.id = id;
-    }
+//         this.id = id;
+//     }
 
-    @Override
-    public String getFrom() {
+//     @Override
+//     public String getFrom() {
 
-        return from;
-    }
+//         return from;
+//     }
 
-    @Override
-    public void setFrom(String from) {
+//     @Override
+//     public void setFrom(String from) {
 
-        this.from = from;
-    }
+//         this.from = from;
+//     }
 
-    @Override
-    public String getReplyTo() {
+//     @Override
+//     public String getReplyTo() {
 
-        return replyTo;
-    }
+//         return replyTo;
+//     }
 
-    @Override
-    public void setReplyTo(String replyTo) {
+//     @Override
+//     public void setReplyTo(String replyTo) {
 
-        this.replyTo = replyTo;
-    }
+//         this.replyTo = replyTo;
+//     }
 
-    @Override
-    public String getTo() {
+//     @Override
+//     public String getTo() {
 
-        return to;
-    }
+//         return to;
+//     }
 
-    @Override
-    public void setTo(String to) {
+//     @Override
+//     public void setTo(String to) {
 
-        this.to = to;
-    }
+//         this.to = to;
+//     }
 
-    @Override
-    public String getCc() {
+//     @Override
+//     public String getCc() {
 
-        return cc;
-    }
+//         return cc;
+//     }
 
-    @Override
-    public void setCc(String cc) {
+//     @Override
+//     public void setCc(String cc) {
 
-        this.cc = cc;
-    }
+//         this.cc = cc;
+//     }
 
-    @Override
-    public String getBcc() {
+//     @Override
+//     public String getBcc() {
 
-        return bcc;
-    }
+//         return bcc;
+//     }
 
-    @Override
-    public void setBcc(String bcc) {
+//     @Override
+//     public void setBcc(String bcc) {
 
-        this.bcc = bcc;
-    }
+//         this.bcc = bcc;
+//     }
 
-    @Override
-    public Date getSentDate() {
+//     @Override
+//     public Date getSentDate() {
 
-        return sentDate;
-    }
+//         return sentDate;
+//     }
 
-    @Override
-    public void setSentDate(Date sentDate) {
+//     @Override
+//     public void setSentDate(Date sentDate) {
 
-        this.sentDate = sentDate;
-    }
+//         this.sentDate = sentDate;
+//     }
 
-    @Override
-    public String getCharset() {
+//     @Override
+//     public String getCharset() {
 
-        return charset;
-    }
+//         return charset;
+//     }
 
-    @Override
-    public void setCharset(String charset) {
+//     @Override
+//     public void setCharset(String charset) {
 
-        this.charset = charset;
-    }
+//         this.charset = charset;
+//     }
 
-    @Override
-    public String getSubject() {
+//     @Override
+//     public String getSubject() {
 
-        return subject;
-    }
+//         return subject;
+//     }
 
-    @Override
-    public void setSubject(String subject) {
+//     @Override
+//     public void setSubject(String subject) {
 
-        this.subject = subject;
-    }
+//         this.subject = subject;
+//     }
 
-    @Override
-    public String getContent() {
+//     @Override
+//     public String getContent() {
 
-        return content;
-    }
+//         return content;
+//     }
 
-    @Override
-    public void setContent(String content) {
+//     @Override
+//     public void setContent(String content) {
 
-        this.content = content;
-    }
+//         this.content = content;
+//     }
 
-    @Override
-    public Object getAttachment(String attachmentName) {
+//     @Override
+//     public Object getAttachment(String attachmentName) {
 
-        return attachmentMap.get(attachmentName);
-    }
+//         return attachmentMap.get(attachmentName);
+//     }
 
-    @Override
-    public void addAttachment(String attachmentName, Object attachmentContent) {
+//     @Override
+//     public void addAttachment(String attachmentName, Object attachmentContent) {
 
-        attachmentMap.put(attachmentName, attachmentContent);
-    }
+//         attachmentMap.put(attachmentName, attachmentContent);
+//     }
 
-    @Override
-    public void addAttachments(Map<String, String> attachments) {
+//     @Override
+//     public void addAttachments(Map<String, String> attachments) {
 
-        attachmentMap.putAll(attachments);
-    }
+//         attachmentMap.putAll(attachments);
+//     }
 
-    @Override
-    public boolean containsAttachment(String attachmentName) {
+//     @Override
+//     public boolean containsAttachment(String attachmentName) {
 
-        return attachmentMap.containsKey(attachmentName);
-    }
+//         return attachmentMap.containsKey(attachmentName);
+//     }
 
-    @Override
-    public void removeAttachment(String attachmentName) {
+//     @Override
+//     public void removeAttachment(String attachmentName) {
 
-        attachmentMap.remove(attachmentName);
-    }
+//         attachmentMap.remove(attachmentName);
+//     }
 
-    @Override
-    public Map<String, Object> getAttachments() {
+//     @Override
+//     public Map<String, Object> getAttachments() {
 
-        return Collections.unmodifiableMap(attachmentMap);
-    }
+//         return Collections.unmodifiableMap(attachmentMap);
+//     }
 
-    @Override
-    public void clearAttachments() {
+//     @Override
+//     public void clearAttachments() {
 
-        attachmentMap.clear();
-    }
+//         attachmentMap.clear();
+//     }
 
-    @Override
-    public Object rawData() {
+//     @Override
+//     public Object rawData() {
 
-        return rawData;
-    }
+//         return rawData;
+//     }
 
-    @Override
-    public void rawData(Object rawData) {
+//     @Override
+//     public void rawData(Object rawData) {
 
-        this.rawData = rawData;
-    }
+//         this.rawData = rawData;
+//     }
 
-}
+// }

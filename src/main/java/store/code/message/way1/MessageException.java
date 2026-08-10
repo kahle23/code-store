@@ -1,31 +1,31 @@
 package store.code.message.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * Message exception.
- * @author Kahle
- */
-public class MessageException extends UncheckedException {
+// /**
+//  * Message exception.
+//  * @author Kahle
+//  */
+// public class MessageException extends UncheckedException {
 
-    public MessageException() {
+//     public MessageException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public MessageException(String message) {
+//     public MessageException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public MessageException(Throwable cause) {
+//     public MessageException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public MessageException(String message, Throwable cause) {
+//     public MessageException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

@@ -1,26 +1,26 @@
 package store.code.extension.dingtalk.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-public class DingTalkException extends UncheckedException {
+// public class DingTalkException extends UncheckedException {
 
-    public DingTalkException() {
+//     public DingTalkException() {
 
-    }
+//     }
 
-    public DingTalkException(String message) {
+//     public DingTalkException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public DingTalkException(Throwable cause) {
+//     public DingTalkException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public DingTalkException(String message, Throwable cause) {
+//     public DingTalkException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

@@ -1,48 +1,63 @@
 package store.code.storage.way2;
 
-import java.io.InputStream;
-import java.util.Map;
 
-/**
- * Object in the object storage.
- * @author Kahle
- */
-public class StorageObject extends ObjectModel {
-    /**
-     * Object's metadata.
-     */
-    private Map<String, Object> metadata;
-    /**
-     * Object's content.
-     */
-    private InputStream objectContent;
+// import java.io.InputStream;
+// import java.util.Map;
 
-    public StorageObject() {
-    }
 
-    public StorageObject(String bucketName, String objectKey) {
+// /**
+//  * Object in the object storage.
+//  * @author Kahle
+//  */
+// public class StorageObject extends ObjectModel {
+//     /**
+//      * Object's metadata.
+//      */
+//     private Map<String, Object> metadata;
+//     /**
+//      * Object's content.
+//      */
+//     private InputStream objectContent;
 
-        super(bucketName, objectKey);
-    }
 
-    public Map<String, Object> getMetadata() {
+//     public StorageObject() {
+//     }
 
-        return metadata;
-    }
 
-    public void setMetadata(Map<String, Object> metadata) {
+//     public StorageObject(String bucketName, String objectKey) {
 
-        this.metadata = metadata;
-    }
 
-    public InputStream getObjectContent() {
+//         super(bucketName, objectKey);
+//     }
 
-        return objectContent;
-    }
 
-    public void setObjectContent(InputStream objectContent) {
+//     public Map<String, Object> getMetadata() {
 
-        this.objectContent = objectContent;
-    }
 
-}
+//         return metadata;
+//     }
+
+
+//     public void setMetadata(Map<String, Object> metadata) {
+
+
+//         this.metadata = metadata;
+//     }
+
+
+//     public InputStream getObjectContent() {
+
+
+//         return objectContent;
+//     }
+
+
+//     public void setObjectContent(InputStream objectContent) {
+
+
+//         this.objectContent = objectContent;
+//     }
+
+
+// }
+

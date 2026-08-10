@@ -1,61 +1,80 @@
 package store.code.storage.way2;
 
-public class ListObjectsModel extends ObjectModel {
-    /**
-     * The objects returned whose key must start with this prefix.
-     */
-    private String prefix;
-    /**
-     * The objects returned whose key must be greater than the maker in lexicographical order.
-     */
-    private String marker;
-    /**
-     * The delimiters of object names returned.
-     */
-    private String delimiter;
-    /**
-     * The max objects to return.
-     */
-    private Integer maxKeys;
 
-    public String getPrefix() {
+// public class ListObjectsModel extends ObjectModel {
+//     /**
+//      * The objects returned whose key must start with this prefix.
+//      */
+//     private String prefix;
+//     /**
+//      * The objects returned whose key must be greater than the maker in lexicographical order.
+//      */
+//     private String marker;
+//     /**
+//      * The delimiters of object names returned.
+//      */
+//     private String delimiter;
+//     /**
+//      * The max objects to return.
+//      */
+//     private Integer maxKeys;
 
-        return prefix;
-    }
 
-    public void setPrefix(String prefix) {
+//     public String getPrefix() {
 
-        this.prefix = prefix;
-    }
 
-    public String getMarker() {
+//         return prefix;
+//     }
 
-        return marker;
-    }
 
-    public void setMarker(String marker) {
+//     public void setPrefix(String prefix) {
 
-        this.marker = marker;
-    }
 
-    public String getDelimiter() {
+//         this.prefix = prefix;
+//     }
 
-        return delimiter;
-    }
 
-    public void setDelimiter(String delimiter) {
+//     public String getMarker() {
 
-        this.delimiter = delimiter;
-    }
 
-    public Integer getMaxKeys() {
+//         return marker;
+//     }
 
-        return maxKeys;
-    }
 
-    public void setMaxKeys(Integer maxKeys) {
+//     public void setMarker(String marker) {
 
-        this.maxKeys = maxKeys;
-    }
 
-}
+//         this.marker = marker;
+//     }
+
+
+//     public String getDelimiter() {
+
+
+//         return delimiter;
+//     }
+
+
+//     public void setDelimiter(String delimiter) {
+
+
+//         this.delimiter = delimiter;
+//     }
+
+
+//     public Integer getMaxKeys() {
+
+
+//         return maxKeys;
+//     }
+
+
+//     public void setMaxKeys(Integer maxKeys) {
+
+
+//         this.maxKeys = maxKeys;
+//     }
+
+
+// }
+

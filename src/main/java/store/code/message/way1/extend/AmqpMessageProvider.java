@@ -2,7 +2,7 @@
 //
 //import artoria.beans.BeanMap;
 //import artoria.beans.BeanUtils;
-//import artoria.common.AsyncCallback;
+//import kunlun.common.AsyncCallback;
 //import artoria.exchange.JsonUtils;
 //import artoria.lifecycle.LifecycleException;
 //import artoria.util.MapUtils;

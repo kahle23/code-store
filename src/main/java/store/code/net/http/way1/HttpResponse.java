@@ -1,90 +1,90 @@
 package store.code.net.http.way1;
 
-import java.io.IOException;
-import java.nio.charset.Charset;
+// import java.io.IOException;
+// import java.nio.charset.Charset;
 
-import static artoria.common.Constants.*;
+// import static kunlun.common.Constants.*;
 
-/**
- * Http response message.
- * @author Kahle
- */
-public class HttpResponse extends HttpMessage {
-    private static final int MAX_REDIRECTS = TWENTY;
-    private int numRedirects = ZERO;
-    private HttpRequest request;
-    private int statusCode;
-    private String statusMessage;
-    private byte[] body;
+// /**
+//  * Http response message.
+//  * @author Kahle
+//  */
+// public class HttpResponse extends HttpMessage {
+//     private static final int MAX_REDIRECTS = TWENTY;
+//     private int numRedirects = ZERO;
+//     private HttpRequest request;
+//     private int statusCode;
+//     private String statusMessage;
+//     private byte[] body;
 
-    public HttpResponse() {
-    }
+//     public HttpResponse() {
+//     }
 
-    public HttpResponse(HttpResponse previousResponse) throws IOException {
-        if (previousResponse == null) { return; }
-        numRedirects = previousResponse.getNumRedirects() + ONE;
-        if (numRedirects >= MAX_REDIRECTS) {
-            throw new IOException(
-                    "Too many redirects occurred trying to load URL \"" + previousResponse.getUrl() + "\". "
-            );
-        }
-    }
+//     public HttpResponse(HttpResponse previousResponse) throws IOException {
+//         if (previousResponse == null) { return; }
+//         numRedirects = previousResponse.getNumRedirects() + ONE;
+//         if (numRedirects >= MAX_REDIRECTS) {
+//             throw new IOException(
+//                     "Too many redirects occurred trying to load URL \"" + previousResponse.getUrl() + "\". "
+//             );
+//         }
+//     }
 
-    public int getNumRedirects() {
+//     public int getNumRedirects() {
 
-        return numRedirects;
-    }
+//         return numRedirects;
+//     }
 
-    public HttpRequest getRequest() {
+//     public HttpRequest getRequest() {
 
-        return request;
-    }
+//         return request;
+//     }
 
-    public void setRequest(HttpRequest request) {
+//     public void setRequest(HttpRequest request) {
 
-        this.request = request;
-    }
+//         this.request = request;
+//     }
 
-    public int getStatusCode() {
+//     public int getStatusCode() {
 
-        return statusCode;
-    }
+//         return statusCode;
+//     }
 
-    public void setStatusCode(int statusCode) {
+//     public void setStatusCode(int statusCode) {
 
-        this.statusCode = statusCode;
-    }
+//         this.statusCode = statusCode;
+//     }
 
-    public String getStatusMessage() {
+//     public String getStatusMessage() {
 
-        return statusMessage;
-    }
+//         return statusMessage;
+//     }
 
-    public void setStatusMessage(String statusMessage) {
+//     public void setStatusMessage(String statusMessage) {
 
-        this.statusMessage = statusMessage;
-    }
+//         this.statusMessage = statusMessage;
+//     }
 
-    public byte[] getBody() {
+//     public byte[] getBody() {
 
-        return body;
-    }
+//         return body;
+//     }
 
-    public void setBody(byte[] body) {
+//     public void setBody(byte[] body) {
 
-        this.body = body;
-    }
+//         this.body = body;
+//     }
 
-    public String getBodyAsString() {
-        String encoding = getCharset();
-        encoding = encoding != null ? encoding : DEFAULT_CHARSET_NAME;
-        return getBodyAsString(encoding);
-    }
+//     public String getBodyAsString() {
+//         String encoding = getCharset();
+//         encoding = encoding != null ? encoding : DEFAULT_CHARSET_NAME;
+//         return getBodyAsString(encoding);
+//     }
 
-    public String getBodyAsString(String encoding) {
-        if (body == null) { return null; }
-        Charset charset = Charset.forName(encoding);
-        return new String(body, charset);
-    }
+//     public String getBodyAsString(String encoding) {
+//         if (body == null) { return null; }
+//         Charset charset = Charset.forName(encoding);
+//         return new String(body, charset);
+//     }
 
-}
+// }

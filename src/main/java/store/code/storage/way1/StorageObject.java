@@ -1,96 +1,96 @@
 package store.code.storage.way1;
 
-import artoria.util.CloseUtils;
+// import artoria.util.CloseUtils;
 
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Serializable;
-import java.util.LinkedHashMap;
-import java.util.Map;
+// import java.io.Closeable;
+// import java.io.IOException;
+// import java.io.InputStream;
+// import java.io.Serializable;
+// import java.util.LinkedHashMap;
+// import java.util.Map;
 
-/**
- * Object in the object storage.
- * @author Kahle
- */
-public class StorageObject implements Closeable, Serializable {
-    /**
-     * Original function object.
-     */
-    private Object original;
-    /**
-     * Object's bucket name.
-     */
-    private String bucketName;
-    /**
-     * Object key (name).
-     */
-    private String objectKey;
-    /**
-     * Object's content.
-     */
-    private InputStream objectContent;
-    /**
-     * Object's metadata.
-     */
-    private Map<String, Object> metadata = new LinkedHashMap<String, Object>();
+// /**
+//  * Object in the object storage.
+//  * @author Kahle
+//  */
+// public class StorageObject implements Closeable, Serializable {
+//     /**
+//      * Original function object.
+//      */
+//     private Object original;
+//     /**
+//      * Object's bucket name.
+//      */
+//     private String bucketName;
+//     /**
+//      * Object key (name).
+//      */
+//     private String objectKey;
+//     /**
+//      * Object's content.
+//      */
+//     private InputStream objectContent;
+//     /**
+//      * Object's metadata.
+//      */
+//     private Map<String, Object> metadata = new LinkedHashMap<String, Object>();
 
-    public Object getOriginal() {
+//     public Object getOriginal() {
 
-        return original;
-    }
+//         return original;
+//     }
 
-    public void setOriginal(Object original) {
+//     public void setOriginal(Object original) {
 
-        this.original = original;
-    }
+//         this.original = original;
+//     }
 
-    public String getBucketName() {
+//     public String getBucketName() {
 
-        return bucketName;
-    }
+//         return bucketName;
+//     }
 
-    public void setBucketName(String bucketName) {
+//     public void setBucketName(String bucketName) {
 
-        this.bucketName = bucketName;
-    }
+//         this.bucketName = bucketName;
+//     }
 
-    public String getObjectKey() {
+//     public String getObjectKey() {
 
-        return objectKey;
-    }
+//         return objectKey;
+//     }
 
-    public void setObjectKey(String objectKey) {
+//     public void setObjectKey(String objectKey) {
 
-        this.objectKey = objectKey;
-    }
+//         this.objectKey = objectKey;
+//     }
 
-    public InputStream getObjectContent() {
+//     public InputStream getObjectContent() {
 
-        return objectContent;
-    }
+//         return objectContent;
+//     }
 
-    public void setObjectContent(InputStream objectContent) {
+//     public void setObjectContent(InputStream objectContent) {
 
-        this.objectContent = objectContent;
-    }
+//         this.objectContent = objectContent;
+//     }
 
-    public Map<String, Object> getMetadata() {
+//     public Map<String, Object> getMetadata() {
 
-        return metadata;
-    }
+//         return metadata;
+//     }
 
-    public void setMetadata(Map<String, Object> metadata) {
+//     public void setMetadata(Map<String, Object> metadata) {
 
-        this.metadata = metadata;
-    }
+//         this.metadata = metadata;
+//     }
 
-    @Override
-    public void close() throws IOException {
-        CloseUtils.closeQuietly(objectContent);
-        if (original instanceof Closeable) {
-            CloseUtils.closeQuietly((Closeable) original);
-        }
-    }
+//     @Override
+//     public void close() throws IOException {
+//         CloseUtils.closeQuietly(objectContent);
+//         if (original instanceof Closeable) {
+//             CloseUtils.closeQuietly((Closeable) original);
+//         }
+//     }
 
-}
+// }

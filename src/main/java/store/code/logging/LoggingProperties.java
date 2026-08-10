@@ -1,42 +1,42 @@
 package store.code.logging;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
+// import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import static artoria.common.Constants.ZERO;
+// import static artoria.common.Constants.ZERO;
 
-/**
- * Logger properties.
- * @author Kahle
- */
-@ConfigurationProperties(prefix = "artoria.logging")
-public class LoggingProperties {
-    /**
-     * Print access log.
-     */
-    private Boolean printAccessLog;
-    /**
-     * URL patterns to which the registered interceptor should not apply to.
-     */
-    private String[] excludeAccessLogPathPatterns = new String[ZERO];
+// /**
+//  * Logger properties.
+//  * @author Kahle
+//  */
+// @ConfigurationProperties(prefix = "artoria.logging")
+// public class LoggingProperties {
+//     /**
+//      * Print access log.
+//      */
+//     private Boolean printAccessLog;
+//     /**
+//      * URL patterns to which the registered interceptor should not apply to.
+//      */
+//     private String[] excludeAccessLogPathPatterns = new String[ZERO];
 
-    public Boolean getPrintAccessLog() {
+//     public Boolean getPrintAccessLog() {
 
-        return printAccessLog;
-    }
+//         return printAccessLog;
+//     }
 
-    public void setPrintAccessLog(Boolean printAccessLog) {
+//     public void setPrintAccessLog(Boolean printAccessLog) {
 
-        this.printAccessLog = printAccessLog;
-    }
+//         this.printAccessLog = printAccessLog;
+//     }
 
-    public String[] getExcludeAccessLogPathPatterns() {
+//     public String[] getExcludeAccessLogPathPatterns() {
 
-        return excludeAccessLogPathPatterns;
-    }
+//         return excludeAccessLogPathPatterns;
+//     }
 
-    public void setExcludeAccessLogPathPatterns(String[] excludeAccessLogPathPatterns) {
+//     public void setExcludeAccessLogPathPatterns(String[] excludeAccessLogPathPatterns) {
 
-        this.excludeAccessLogPathPatterns = excludeAccessLogPathPatterns;
-    }
+//         this.excludeAccessLogPathPatterns = excludeAccessLogPathPatterns;
+//     }
 
-}
+// }

@@ -5,11 +5,10 @@
 
 package store.code.ai.way1.support.model;
 
-import kunlun.core.function.Consumer;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * The AI chat request.

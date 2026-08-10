@@ -1,28 +1,28 @@
-/*
- * Copyright (c) 2018. the original author or authors.
- * Kunlun is licensed under the "LICENSE" file in the project's root directory.
- */
+// /*
+//  * Copyright (c) 2018. the original author or authors.
+//  * Kunlun is licensed under the "LICENSE" file in the project's root directory.
+//  */
 
 package store.code.ai.way1;
 
-import kunlun.core.ArtificialIntelligence;
+// import kunlun.core.ArtificialIntelligence;
 
-import java.util.Map;
+// import java.util.Map;
 
-/**
- * The simple artificial intelligence provider.
- * @author Kahle
- */
-public class SimpleAIProvider extends AbstractAIProvider {
+// /**
+//  * The simple artificial intelligence provider.
+//  * @author Kahle
+//  */
+// public class SimpleAIProvider extends AbstractAIProvider {
 
-    protected SimpleAIProvider(Map<String, Object> commonProperties,
-                               Map<String, ArtificialIntelligence> aiEngines) {
+//     protected SimpleAIProvider(Map<String, Object> commonProperties,
+//                                Map<String, ArtificialIntelligence> aiEngines) {
 
-        super(commonProperties, aiEngines);
-    }
+//         super(commonProperties, aiEngines);
+//     }
 
-    public SimpleAIProvider() {
+//     public SimpleAIProvider() {
 
-    }
+//     }
 
-}
+// }

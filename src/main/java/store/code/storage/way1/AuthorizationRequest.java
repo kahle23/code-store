@@ -1,69 +1,69 @@
 package store.code.storage.way1;
 
-import artoria.data.AbstractExtraData;
+// import artoria.data.AbstractExtraData;
 
-import java.io.Serializable;
+// import java.io.Serializable;
 
-/**
- * Object storage authorization request.
- * @author Kahle
- */
-public class AuthorizationRequest extends AbstractExtraData implements Serializable {
-    /**
-     * The name of the bucket.
-     */
-    private String bucketName;
-    /**
-     * Directory to operate on.
-     */
-    private String directory;
-    /**
-     * Expire time (Unit: milliseconds).
-     */
-    private Long expireTime;
-    /**
-     * Callback address.
-     */
-    private String callbackAddress;
+// /**
+//  * Object storage authorization request.
+//  * @author Kahle
+//  */
+// public class AuthorizationRequest extends AbstractExtraData implements Serializable {
+//     /**
+//      * The name of the bucket.
+//      */
+//     private String bucketName;
+//     /**
+//      * Directory to operate on.
+//      */
+//     private String directory;
+//     /**
+//      * Expire time (Unit: milliseconds).
+//      */
+//     private Long expireTime;
+//     /**
+//      * Callback address.
+//      */
+//     private String callbackAddress;
 
-    public String getBucketName() {
+//     public String getBucketName() {
 
-        return bucketName;
-    }
+//         return bucketName;
+//     }
 
-    public void setBucketName(String bucketName) {
+//     public void setBucketName(String bucketName) {
 
-        this.bucketName = bucketName;
-    }
+//         this.bucketName = bucketName;
+//     }
 
-    public String getDirectory() {
+//     public String getDirectory() {
 
-        return directory;
-    }
+//         return directory;
+//     }
 
-    public void setDirectory(String directory) {
+//     public void setDirectory(String directory) {
 
-        this.directory = directory;
-    }
+//         this.directory = directory;
+//     }
 
-    public Long getExpireTime() {
+//     public Long getExpireTime() {
 
-        return expireTime;
-    }
+//         return expireTime;
+//     }
 
-    public void setExpireTime(Long expireTime) {
+//     public void setExpireTime(Long expireTime) {
 
-        this.expireTime = expireTime;
-    }
+//         this.expireTime = expireTime;
+//     }
 
-    public String getCallbackAddress() {
+//     public String getCallbackAddress() {
 
-        return callbackAddress;
-    }
+//         return callbackAddress;
+//     }
 
-    public void setCallbackAddress(String callbackAddress) {
+//     public void setCallbackAddress(String callbackAddress) {
 
-        this.callbackAddress = callbackAddress;
-    }
+//         this.callbackAddress = callbackAddress;
+//     }
 
-}
+// }

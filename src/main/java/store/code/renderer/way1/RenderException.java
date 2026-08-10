@@ -1,31 +1,31 @@
 package store.code.renderer.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * Render exception.
- * @author Kahle
- */
-public class RenderException extends UncheckedException {
+// /**
+//  * Render exception.
+//  * @author Kahle
+//  */
+// public class RenderException extends UncheckedException {
 
-    public RenderException() {
+//     public RenderException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public RenderException(String message) {
+//     public RenderException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public RenderException(Throwable cause) {
+//     public RenderException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public RenderException(String message, Throwable cause) {
+//     public RenderException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

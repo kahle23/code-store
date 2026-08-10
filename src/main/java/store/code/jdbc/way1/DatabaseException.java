@@ -1,31 +1,31 @@
 package store.code.jdbc.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * Jdbc exception.
- * @author Kahle
- */
-public class DatabaseException extends UncheckedException {
+// /**
+//  * Jdbc exception.
+//  * @author Kahle
+//  */
+// public class DatabaseException extends UncheckedException {
 
-    public DatabaseException() {
+//     public DatabaseException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public DatabaseException(String message) {
+//     public DatabaseException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public DatabaseException(Throwable cause) {
+//     public DatabaseException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public DatabaseException(String message, Throwable cause) {
+//     public DatabaseException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

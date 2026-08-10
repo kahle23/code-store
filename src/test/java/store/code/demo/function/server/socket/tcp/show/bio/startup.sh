@@ -1,0 +1,1 @@
+nohup java -jar socket-show-tcp-server-bio.jar -p 1234 > log.log 2>&1 &

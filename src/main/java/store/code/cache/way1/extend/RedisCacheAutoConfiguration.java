@@ -1,6 +1,6 @@
 //package store.code.cache.way1.extend;
 //
-//import artoria.cache.CacheAutoConfiguration;
+//import kunlun.cache.CacheAutoConfiguration;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 //import org.springframework.boot.autoconfigure.AutoConfigureAfter;

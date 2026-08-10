@@ -1,31 +1,31 @@
 package store.code.extension.tencent.wx.open;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * WeiXin open platform exception.
- * @author Kahle
- */
-public class WxOpenException extends UncheckedException {
+// /**
+//  * WeiXin open platform exception.
+//  * @author Kahle
+//  */
+// public class WxOpenException extends UncheckedException {
 
-    public WxOpenException() {
+//     public WxOpenException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public WxOpenException(String message) {
+//     public WxOpenException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public WxOpenException(Throwable cause) {
+//     public WxOpenException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public WxOpenException(String message, Throwable cause) {
+//     public WxOpenException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

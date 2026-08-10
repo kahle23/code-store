@@ -1,98 +1,134 @@
 package store.code.storage.way2;
 
-import java.util.List;
 
-public class ListObjectsResult extends ObjectResult {
-    /**
-     * A list of summary information describing the objects stored in the bucket.
-     */
-    private List<StorageObject> objectSummaries;
-    private List<String> commonPrefixes;
-    private String prefix;
-    private String marker;
-    private String delimiter;
-    private Integer maxKeys;
-    private Boolean truncated;
-    private String nextMarker;
+// import java.util.List;
 
-    public List<StorageObject> getObjectSummaries() {
 
-        return objectSummaries;
-    }
+// public class ListObjectsResult extends ObjectResult {
+//     /**
+//      * A list of summary information describing the objects stored in the bucket.
+//      */
+//     private List<StorageObject> objectSummaries;
+//     private List<String> commonPrefixes;
+//     private String prefix;
+//     private String marker;
+//     private String delimiter;
+//     private Integer maxKeys;
+//     private Boolean truncated;
+//     private String nextMarker;
 
-    public void setObjectSummaries(List<StorageObject> objectSummaries) {
 
-        this.objectSummaries = objectSummaries;
-    }
+//     public List<StorageObject> getObjectSummaries() {
 
-    public List<String> getCommonPrefixes() {
 
-        return commonPrefixes;
-    }
+//         return objectSummaries;
+//     }
 
-    public void setCommonPrefixes(List<String> commonPrefixes) {
 
-        this.commonPrefixes = commonPrefixes;
-    }
+//     public void setObjectSummaries(List<StorageObject> objectSummaries) {
 
-    public String getPrefix() {
 
-        return prefix;
-    }
+//         this.objectSummaries = objectSummaries;
+//     }
 
-    public void setPrefix(String prefix) {
 
-        this.prefix = prefix;
-    }
+//     public List<String> getCommonPrefixes() {
 
-    public String getMarker() {
 
-        return marker;
-    }
+//         return commonPrefixes;
+//     }
 
-    public void setMarker(String marker) {
 
-        this.marker = marker;
-    }
+//     public void setCommonPrefixes(List<String> commonPrefixes) {
 
-    public String getDelimiter() {
 
-        return delimiter;
-    }
+//         this.commonPrefixes = commonPrefixes;
+//     }
 
-    public void setDelimiter(String delimiter) {
 
-        this.delimiter = delimiter;
-    }
+//     public String getPrefix() {
 
-    public Integer getMaxKeys() {
 
-        return maxKeys;
-    }
+//         return prefix;
+//     }
 
-    public void setMaxKeys(Integer maxKeys) {
 
-        this.maxKeys = maxKeys;
-    }
+//     public void setPrefix(String prefix) {
 
-    public Boolean getTruncated() {
 
-        return truncated;
-    }
+//         this.prefix = prefix;
+//     }
 
-    public void setTruncated(Boolean truncated) {
 
-        this.truncated = truncated;
-    }
+//     public String getMarker() {
 
-    public String getNextMarker() {
 
-        return nextMarker;
-    }
+//         return marker;
+//     }
 
-    public void setNextMarker(String nextMarker) {
 
-        this.nextMarker = nextMarker;
-    }
+//     public void setMarker(String marker) {
 
-}
+
+//         this.marker = marker;
+//     }
+
+
+//     public String getDelimiter() {
+
+
+//         return delimiter;
+//     }
+
+
+//     public void setDelimiter(String delimiter) {
+
+
+//         this.delimiter = delimiter;
+//     }
+
+
+//     public Integer getMaxKeys() {
+
+
+//         return maxKeys;
+//     }
+
+
+//     public void setMaxKeys(Integer maxKeys) {
+
+
+//         this.maxKeys = maxKeys;
+//     }
+
+
+//     public Boolean getTruncated() {
+
+
+//         return truncated;
+//     }
+
+
+//     public void setTruncated(Boolean truncated) {
+
+
+//         this.truncated = truncated;
+//     }
+
+
+//     public String getNextMarker() {
+
+
+//         return nextMarker;
+//     }
+
+
+//     public void setNextMarker(String nextMarker) {
+
+
+//         this.nextMarker = nextMarker;
+//     }
+
+
+// }
+

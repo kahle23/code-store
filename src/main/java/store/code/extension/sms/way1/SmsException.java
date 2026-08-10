@@ -1,31 +1,31 @@
 package store.code.extension.sms.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * Short messaging service exception.
- * @author Kahle
- */
-public class SmsException extends UncheckedException {
+// /**
+//  * Short messaging service exception.
+//  * @author Kahle
+//  */
+// public class SmsException extends UncheckedException {
 
-    public SmsException() {
+//     public SmsException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public SmsException(String message) {
+//     public SmsException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public SmsException(Throwable cause) {
+//     public SmsException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public SmsException(String message, Throwable cause) {
+//     public SmsException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

@@ -1,31 +1,31 @@
 package store.code.lock.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * Lock exception.
- * @author Kahle
- */
-public class LockException extends UncheckedException {
+// /**
+//  * Lock exception.
+//  * @author Kahle
+//  */
+// public class LockException extends UncheckedException {
 
-    public LockException() {
+//     public LockException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public LockException(String message) {
+//     public LockException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public LockException(Throwable cause) {
+//     public LockException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public LockException(String message, Throwable cause) {
+//     public LockException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

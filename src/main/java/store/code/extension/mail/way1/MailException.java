@@ -1,27 +1,27 @@
 package store.code.extension.mail.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-public class MailException extends UncheckedException {
+// public class MailException extends UncheckedException {
 
-    public MailException() {
+//     public MailException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public MailException(String message) {
+//     public MailException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public MailException(Throwable cause) {
+//     public MailException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public MailException(String message, Throwable cause) {
+//     public MailException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

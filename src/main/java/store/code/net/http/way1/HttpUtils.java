@@ -1,95 +1,95 @@
 package store.code.net.http.way1;
 
-import artoria.exception.ExceptionUtils;
-import artoria.logging.Logger;
-import artoria.logging.LoggerFactory;
-import artoria.util.Assert;
-import artoria.util.MapUtils;
+// import kunlun.exception.ExceptionUtils;
+// import kunlun.logging.Logger;
+// import kunlun.logging.LoggerFactory;
+// import kunlun.util.Assert;
+// import kunlun.util.MapUtils;
 
-import java.util.Map;
+// import java.util.Map;
 
-/**
- * Simple http tools.
- * @author Kahle
- */
-public class HttpUtils {
-    private static Logger log = LoggerFactory.getLogger(HttpUtils.class);
-    private static HttpClient httpClient;
+// /**
+//  * Simple http tools.
+//  * @author Kahle
+//  */
+// public class HttpUtils {
+//     private static Logger log = LoggerFactory.getLogger(HttpUtils.class);
+//     private static HttpClient httpClient;
 
-    public static HttpClient getHttpClient() {
-        if (httpClient != null) { return httpClient; }
-        synchronized (HttpUtils.class) {
-            if (httpClient != null) { return httpClient; }
-            HttpUtils.setHttpClient(new SimpleHttpClient());
-            return httpClient;
-        }
-    }
+//     public static HttpClient getHttpClient() {
+//         if (httpClient != null) { return httpClient; }
+//         synchronized (HttpUtils.class) {
+//             if (httpClient != null) { return httpClient; }
+//             HttpUtils.setHttpClient(new SimpleHttpClient());
+//             return httpClient;
+//         }
+//     }
 
-    public static void setHttpClient(HttpClient httpClient) {
-        Assert.notNull(httpClient, "Parameter \"httpClient\" must not null. ");
-        log.info("Set http client: {}", httpClient.getClass().getName());
-        HttpUtils.httpClient = httpClient;
-    }
+//     public static void setHttpClient(HttpClient httpClient) {
+//         Assert.notNull(httpClient, "Parameter \"httpClient\" must not null. ");
+//         log.info("Set http client: {}", httpClient.getClass().getName());
+//         HttpUtils.httpClient = httpClient;
+//     }
 
-    public static String get(String url) {
+//     public static String get(String url) {
 
-        return HttpUtils.execute(url, HttpMethod.GET, null);
-    }
+//         return HttpUtils.execute(url, HttpMethod.GET, null);
+//     }
 
-    public static String get(String url, Map<String, Object> params) {
+//     public static String get(String url, Map<String, Object> params) {
 
-        return HttpUtils.execute(url, HttpMethod.GET, params);
-    }
+//         return HttpUtils.execute(url, HttpMethod.GET, params);
+//     }
 
-    public static String post(String url) {
+//     public static String post(String url) {
 
-        return HttpUtils.execute(url, HttpMethod.POST, null);
-    }
+//         return HttpUtils.execute(url, HttpMethod.POST, null);
+//     }
 
-    public static String post(String url, Map<String, Object> params) {
+//     public static String post(String url, Map<String, Object> params) {
 
-        return HttpUtils.execute(url, HttpMethod.POST, params);
-    }
+//         return HttpUtils.execute(url, HttpMethod.POST, params);
+//     }
 
-    public static String put(String url) {
+//     public static String put(String url) {
 
-        return HttpUtils.execute(url, HttpMethod.PUT, null);
-    }
+//         return HttpUtils.execute(url, HttpMethod.PUT, null);
+//     }
 
-    public static String put(String url, Map<String, Object> params) {
+//     public static String put(String url, Map<String, Object> params) {
 
-        return HttpUtils.execute(url, HttpMethod.PUT, params);
-    }
+//         return HttpUtils.execute(url, HttpMethod.PUT, params);
+//     }
 
-    public static String delete(String url) {
+//     public static String delete(String url) {
 
-        return HttpUtils.execute(url, HttpMethod.DELETE, null);
-    }
+//         return HttpUtils.execute(url, HttpMethod.DELETE, null);
+//     }
 
-    public static String delete(String url, Map<String, Object> params) {
+//     public static String delete(String url, Map<String, Object> params) {
 
-        return HttpUtils.execute(url, HttpMethod.PUT, params);
-    }
+//         return HttpUtils.execute(url, HttpMethod.PUT, params);
+//     }
 
-    public static String execute(String url, HttpMethod method) {
+//     public static String execute(String url, HttpMethod method) {
 
-        return HttpUtils.execute(url, method, null);
-    }
+//         return HttpUtils.execute(url, method, null);
+//     }
 
-    public static String execute(String url, HttpMethod method, Map<String, Object> params) {
-        try {
-            HttpRequest request = new HttpRequest();
-            request.setMethod(method);
-            request.setUrl(url);
-            if (MapUtils.isNotEmpty(params)) {
-                request.addParameters(params);
-            }
-            HttpResponse response = getHttpClient().execute(request);
-            return response.getBodyAsString();
-        }
-        catch (Exception e) {
-            throw ExceptionUtils.wrap(e);
-        }
-    }
+//     public static String execute(String url, HttpMethod method, Map<String, Object> params) {
+//         try {
+//             HttpRequest request = new HttpRequest();
+//             request.setMethod(method);
+//             request.setUrl(url);
+//             if (MapUtils.isNotEmpty(params)) {
+//                 request.addParameters(params);
+//             }
+//             HttpResponse response = getHttpClient().execute(request);
+//             return response.getBodyAsString();
+//         }
+//         catch (Exception e) {
+//             throw ExceptionUtils.wrap(e);
+//         }
+//     }
 
-}
+// }

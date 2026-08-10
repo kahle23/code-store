@@ -1,31 +1,31 @@
 package store.code.dict.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * Dict exception.
- * @author Kahle
- */
-public class DictException extends UncheckedException {
+// /**
+//  * Dict exception.
+//  * @author Kahle
+//  */
+// public class DictException extends UncheckedException {
 
-    public DictException() {
+//     public DictException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public DictException(String message) {
+//     public DictException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public DictException(Throwable cause) {
+//     public DictException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public DictException(String message, Throwable cause) {
+//     public DictException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

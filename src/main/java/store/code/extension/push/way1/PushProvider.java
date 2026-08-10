@@ -1,7 +1,7 @@
 package store.code.extension.push.way1;
 
-public interface PushProvider {
+// public interface PushProvider {
 
-    PushResult send(PushMessage pushMessage);
+//     PushResult send(PushMessage pushMessage);
 
-}
+// }

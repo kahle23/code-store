@@ -1,21 +1,21 @@
 package store.code.extension.mail.way1;
 
-import java.util.List;
+// import java.util.List;
 
-public interface MailClient {
+// public interface MailClient {
 
-    void send(Mail... mails);
+//     void send(Mail... mails);
 
-    Integer getTotalMailCount(String folderName);
+//     Integer getTotalMailCount(String folderName);
 
-    Integer getNewMailCount(String folderName);
+//     Integer getNewMailCount(String folderName);
 
-    Integer getUnreadMailCount(String folderName);
+//     Integer getUnreadMailCount(String folderName);
 
-    Integer getDeletedMailCount(String folderName);
+//     Integer getDeletedMailCount(String folderName);
 
-    Mail getMail(String folderName, Integer number);
+//     Mail getMail(String folderName, Integer number);
 
-    List<Mail> getMails(String folderName, Integer startNumber, Integer endNumber);
+//     List<Mail> getMails(String folderName, Integer startNumber, Integer endNumber);
 
-}
+// }

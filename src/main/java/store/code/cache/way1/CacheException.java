@@ -1,31 +1,31 @@
 package store.code.cache.way1;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * Cache exception.
- * @author Kahle
- */
-public class CacheException extends UncheckedException {
+// /**
+//  * Cache exception.
+//  * @author Kahle
+//  */
+// public class CacheException extends UncheckedException {
 
-    public CacheException() {
+//     public CacheException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public CacheException(String message) {
+//     public CacheException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public CacheException(Throwable cause) {
+//     public CacheException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public CacheException(String message, Throwable cause) {
+//     public CacheException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }

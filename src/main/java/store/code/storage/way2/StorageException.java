@@ -1,31 +1,31 @@
 package store.code.storage.way2;
 
-import artoria.exception.UncheckedException;
+// import artoria.exception.UncheckedException;
 
-/**
- * Storage exception.
- * @author Kahle
- */
-public class StorageException extends UncheckedException {
+// /**
+//  * Storage exception.
+//  * @author Kahle
+//  */
+// public class StorageException extends UncheckedException {
 
-    public StorageException() {
+//     public StorageException() {
 
-        super();
-    }
+//         super();
+//     }
 
-    public StorageException(String message) {
+//     public StorageException(String message) {
 
-        super(message);
-    }
+//         super(message);
+//     }
 
-    public StorageException(Throwable cause) {
+//     public StorageException(Throwable cause) {
 
-        super(cause);
-    }
+//         super(cause);
+//     }
 
-    public StorageException(String message, Throwable cause) {
+//     public StorageException(String message, Throwable cause) {
 
-        super(message, cause);
-    }
+//         super(message, cause);
+//     }
 
-}
+// }
