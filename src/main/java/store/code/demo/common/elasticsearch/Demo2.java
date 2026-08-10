@@ -54,7 +54,7 @@ package store.code.demo.common.elasticsearch;
 //     @Before
 //     public void init() throws Exception {
 //         Settings settings = Settings.builder()
-//                 .put("cluster.name", "QIN") // 鎸囧畾闆嗙兢鍚嶇О
+//                 .put("cluster.name", "QIN") // 指定集群名称
 //                 .build();
 //         client = new PreBuiltTransportClient(settings)
 //                 .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("114.67.232.225"), 9300));
@@ -65,20 +65,20 @@ package store.code.demo.common.elasticsearch;
 //         }
 //     }
 // 
-//      * 閫氳繃prepareGet鏂规硶鑾峰彇鎸囧畾鏂囨。淇℃伅
+//      * 通过prepareGet方法获取指定文档信息
 //     @Test
 //     public void testPrepareGet() {
 //         GetResponse resp = client.prepareGet(index, type, "2").get();
 //         System.out.println(resp.getSourceAsString());
 //     }
 // 
-//      * prepareUpdate鏇存柊绱㈠紩搴撲腑鏂囨。锛屽鏋滄枃妗ｄ笉瀛樺湪鍒欎細鎶ラ敊
+//      * prepareUpdate更新索引库中文档，如果文档不存在则会报错
 //     @Test
 //     public void testUpdate() throws IOException {
 //         XContentBuilder source = XContentFactory.jsonBuilder()
 //                 .startObject()
 //                 .field("title", "Hello, World! ")
-//                 .field("content", "鎴戞摝鍢烇紝鍘夊浜? ")
+//                 .field("content", "我擦嘞，厉害！ ")
 //                 .endObject();
 // 
 //         UpdateResponse updateResponse = client
@@ -90,14 +90,14 @@ package store.code.demo.common.elasticsearch;
 //     @Test
 //     public void testIndexJson() {
 //         Map<String, Object> source = new HashMap<>();
-//         source.put("Hello", "浣犲ソ锛?);
-//         source.put("鍗фЫ", "鍘夊浜?);
+//         source.put("Hello", "你好");
+//         source.put("卧槽", "厉害");
 //         IndexResponse indexResponse = client
 //                 .prepareIndex(index, type, "2").setSource(source).get();
 //         System.out.println(indexResponse.getVersion());
 //     }
 // 
-//      * 閫氳繃prepareIndex澧炲姞鏂囨。锛屽弬鏁颁负javaBean
+//      * 通过prepareIndex增加文档，参数为javaBean
 //     @Test
 //     public void testIndexBean() throws ElasticsearchException, JsonProcessingException {
 //         User zhangsan = new User().setName("寮犱笁").setAge(19).setEmail("zhangsan@email.com");
@@ -108,12 +108,12 @@ package store.code.demo.common.elasticsearch;
 //         System.out.println(indexResponse.getVersion());
 //     }
 // 
-//      * 閫氳繃prepareIndex澧炲姞鏂囨。锛屽弬鏁颁负XContentBuilder
+//      * 通过prepareIndex增加文档，参数为XContentBuilder
 //     @Test
 //     public void testIndexXContentBuilder() throws IOException, InterruptedException, ExecutionException {
 //         XContentBuilder builder = XContentFactory.jsonBuilder()
 //                 .startObject()
-//                 .field("name", "鏉庡洓")
+//                 .field("name", "李四")
 //                 .field("age", 20)
 //                 .field("email", "lisi@email.com")
 //                 .endObject();
@@ -123,7 +123,7 @@ package store.code.demo.common.elasticsearch;
 //                 .execute().get();
 //     }
 // 
-//      * 閫氳繃prepareDelete鍒犻櫎鏂囨。
+//      * 通过prepareDelete删除文档
 //     @Test
 //     public void testDelete() {
 //         String id = "2";
@@ -139,7 +139,7 @@ package store.code.demo.common.elasticsearch;
 //         client.admin().indices().prepareDelete("shb01","shb02").get();
 //     }
 // 
-//      * 姹傜储寮曞簱鏂囨。鎬绘暟
+//      * 求索引库文档总数
 //     @Test
 //     public void testCount() {
 //     }
@@ -169,20 +169,20 @@ package store.code.demo.common.elasticsearch;
 //                 System.out.println(item.getFailureMessage());
 //             }
 //         } else {
-//             System.out.println("鍏ㄩ儴鎵ц鎴愬姛锛?);
+//             System.out.println("全部执行成功！");
 //         }
 //     }
 // 
-//      * 閫氳繃prepareSearch鏌ヨ绱㈠紩搴?     * setQuery(QueryBuilders.matchQuery("name", "jack"))
+//      * 通过prepareSearch查询索引。     * setQuery(QueryBuilders.matchQuery("name", "jack"))
 //      * setSearchType(SearchType.QUERY_THEN_FETCH)
 //     @Test
 //     public void testSearch() {
 //         SearchResponse searchResponse = client.prepareSearch(index)
 //                 .setTypes(type)
-//                 .setQuery(QueryBuilders.matchAllQuery()) //鏌ヨ鎵€鏈?                //.setQuery(QueryBuilders.matchQuery("name", "tom").operator(Operator.AND)) //鏍规嵁tom鍒嗚瘝鏌ヨname,榛樿or
+//                 .setQuery(QueryBuilders.matchAllQuery()) //查询所有                //.setQuery(QueryBuilders.matchQuery("name", "tom").operator(Operator.AND)) //根据tom分词查询name,默认or
 //                 .setSearchType(SearchType.QUERY_THEN_FETCH)
-//                 .setFrom(0).setSize(10)//鍒嗛〉
-//                 .addSort("age", SortOrder.DESC)//鎺掑簭
+//                 .setFrom(0).setSize(10)//分页
+//                 .addSort("age", SortOrder.DESC)//排序
 //                 .get();
 // 
 //         SearchHits hits = searchResponse.getHits();
@@ -211,7 +211,7 @@ package store.code.demo.common.elasticsearch;
 //         }
 //     }
 // 
-//      * 杩囨护锛?     * lt 灏忎簬
+//      * 杩囨护：     * lt 灏忎簬
 //      * gt 澶т簬
 //      * lte 灏忎簬绛変簬
 //      * gte 澶т簬绛変簬
@@ -219,9 +219,9 @@ package store.code.demo.common.elasticsearch;
 //     public void testFilter() {
 //         SearchResponse searchResponse = client.prepareSearch(index)
 //                 .setTypes(type)
-//                 .setQuery(QueryBuilders.matchAllQuery()) //鏌ヨ鎵€鏈?                .setSearchType(SearchType.QUERY_THEN_FETCH)
+//                 .setQuery(QueryBuilders.matchAllQuery()) //查询扢：                .setSearchType(SearchType.QUERY_THEN_FETCH)
 //                 .setPostFilter(QueryBuilders.rangeQuery("age").gte(20).lte(24))
-//                 .setExplain(true) //explain涓簍rue琛ㄧず鏍规嵁鏁版嵁鐩稿叧搴︽帓搴忥紝鍜屽叧閿瓧鍖归厤鏈€楂樼殑鎺掑湪鍓嶉潰
+//                 .setExplain(true) //explain为true表示根据数据相关度排序，和关键字匹配度高的排在前面
 //                 .get();
 // 
 //         SearchHits hits = searchResponse.getHits();
@@ -255,14 +255,14 @@ package store.code.demo.common.elasticsearch;
 //         }
 //     }
 // 
-//      * 鍒嗙粍
+//      * 分组
 //     @Test
 //     public void testGroupBy() {
 //         SearchResponse searchResponse = client.prepareSearch(index).setTypes(type)
 //                 .setQuery(QueryBuilders.matchAllQuery())
 //                 .setSearchType(SearchType.QUERY_THEN_FETCH)
 //                 .addAggregation(AggregationBuilders.terms("group_age")
-//                         .field("age").size(0))//鏍规嵁age鍒嗙粍锛岄粯璁よ繑鍥?0锛宻ize(0)涔熸槸10
+//                         .field("age").size(0))//根据age分组，默认返回10，size(0)也是10
 //                 .get();
 // 
 //         Terms terms = searchResponse.getAggregations().get("group_age");

@@ -337,12 +337,12 @@
             <version>2.7.3</version>
         </dependency>
 
-        <!-- 迁移注释：spring-kafka 3.0.1 基于 Spring 6（Java 17 编译），与本项目 JDK 1.8 不兼容；
+        <!-- 迁移注释：spring-kafka 3.0.x 基于 Spring 6（Java 17 编译），与本项目 JDK 1.8 不兼容；
              其唯一使用者 KafkaMessageProvider 整体已是注释状态，故注释掉该依赖。
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
-            <version>3.0.1</version>
+            <version>3.0.10</version>
         </dependency>
         -->
 
@@ -402,7 +402,7 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>4.5.7</version>
+            <version>5.8.21</version>
             <scope>provided</scope>
         </dependency>
 
