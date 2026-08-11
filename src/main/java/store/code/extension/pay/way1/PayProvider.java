@@ -1,13 +1,13 @@
 package store.code.extension.pay.way1;
 
-// public interface PayProvider {
+public interface PayProvider {
 
-//     OrderPayResult payOrder(OrderPayModel orderPayModel);
+    OrderPayResult payOrder(OrderPayModel orderPayModel);
 
-//     OrderQueryResult queryOrder(OrderQueryModel orderQueryModel);
+    OrderQueryResult queryOrder(OrderQueryModel orderQueryModel);
 
-//     OrderCloseResult closeOrder(OrderCloseModel orderCloseModel);
+    OrderCloseResult closeOrder(OrderCloseModel orderCloseModel);
 
-//     PayNotifyResult payNotify(PayNotifyModel payNotifyModel);
+    PayNotifyResult payNotify(PayNotifyModel payNotifyModel);
 
-// }
+}

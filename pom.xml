@@ -66,18 +66,19 @@
             <version>1.0.0.20240217.beta</version>
         </dependency>
 
-        <!-- 迁移修复：artoria 坐标修正为 central 可解析的 com.github.kahlkn:artoria（原 io.github.kahle23 无此版本），
-             且选用与 code-store 代码 API 匹配的旧版 1.0.0.20210917f.beta -->
+        <!-- 迁移修复：artoria 坐标修正为 central 可解析的 com.github.kahlkn:artoria（原 io.github.kahle23 无此版本）。
+             迁移 misaka-extend 缺失模块需新版 API（action/bot/db.vector/storage/io.oss/data.json 等），
+             升级到本地已有且向后兼容的 1.0.0.20240119.beta -->
         <dependency>
             <groupId>com.github.kahlkn</groupId>
             <artifactId>artoria</artifactId>
-            <version>1.0.0.20210917f.beta</version>
+            <version>1.0.0.20240119.beta</version>
         </dependency>
 
         <dependency>
             <groupId>com.github.kahlkn</groupId>
             <artifactId>artoria-extend</artifactId>
-            <version>1.0.0.20210917f.beta</version>
+            <version>1.0.0.20240119.beta</version>
         </dependency>
         <!-- ///// end artoria //// -->
 
@@ -775,6 +776,13 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                     <encoding>${maven.compiler.encoding}</encoding>
+                    <!-- 迁移注记（2026-08-12）：store.code.message.way3 是旧版 kunlun message 框架的重复移植
+                         （execute 签名），与锁定版本 kunlun 1.0.0.20240217.beta 的 kunlun.message.*（operate 签名）
+                         冲突，且无任何外部引用（way1/way2 为活动模块）。功能已被 kunlun.message 原生覆盖，
+                         故整体排除编译，文件保留；如需启用需按新版 kunlun message API 重写。 -->
+                    <excludes>
+                        <exclude>store/code/message/way3/**</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
 

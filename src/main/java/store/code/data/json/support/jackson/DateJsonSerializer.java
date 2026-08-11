@@ -8,11 +8,11 @@ package store.code.data.json.support.jackson;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
-import kunlun.time.DateUtil;
 import kunlun.util.Assert;
 import org.springframework.boot.jackson.JsonComponent;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @JsonComponent
@@ -31,7 +31,7 @@ public class DateJsonSerializer extends JsonSerializer<Date> {
 
     @Override
     public void serialize(Date value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
-        String format = DateUtil.format(value, pattern);
+        String format = new SimpleDateFormat(pattern).format(value);
         gen.writeString(format);
     }
 

@@ -9,7 +9,6 @@ import kunlun.logging.Logger;
 import kunlun.logging.LoggerFactory;
 import kunlun.message.support.ConsoleHandler;
 import kunlun.util.Assert;
-import kunlun.util.ObjUtils;
 
 import java.util.List;
 
@@ -30,7 +29,7 @@ public class LogHandler extends ConsoleHandler {
             }
             isSupport(new Class[]{Boolean.class}, clazz);
             log.info(convert(input, getCommonProperties()));
-            return ObjUtils.cast(Boolean.TRUE, clazz);
+            return Boolean.TRUE;
         }
         else if (BATCH_SEND.equals(name)) {
             Assert.isInstanceOf(List.class, input
@@ -42,7 +41,7 @@ public class LogHandler extends ConsoleHandler {
             for (Object message : messages) {
                 log.info(convert(message, getCommonProperties()));
             }
-            return ObjUtils.cast(Boolean.TRUE, clazz);
+            return Boolean.TRUE;
         }
         else {
             throw new UnsupportedOperationException(

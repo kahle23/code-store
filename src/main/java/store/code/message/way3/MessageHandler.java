@@ -5,8 +5,6 @@
 
 package store.code.message.way3;
 
-import kunlun.core.handler.StrategySupportedHandler;
-
 import java.lang.reflect.Type;
 import java.util.Map;
 
@@ -15,7 +13,7 @@ import java.util.Map;
  * @author Kahle
  */
 @Deprecated
-public interface MessageHandler extends StrategySupportedHandler {
+public interface MessageHandler {
 
     /**
      * Get the common properties of the settings.

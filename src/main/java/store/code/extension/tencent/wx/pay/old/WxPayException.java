@@ -1,32 +1,32 @@
 package store.code.extension.tencent.wx.pay.old;
 
-// import artoria.exception.UncheckedException;
+import artoria.exception.UncheckedException;
 
-// /**
-//  * WeiXin pay exception.
-//  * @author Kahle
-//  */
-// @Deprecated
-// public class WxPayException extends UncheckedException {
+/**
+ * WeiXin pay exception.
+ * @author Kahle
+ */
+@Deprecated
+public class WxPayException extends UncheckedException {
 
-//     public WxPayException() {
+    public WxPayException() {
 
-//         super();
-//     }
+        super();
+    }
 
-//     public WxPayException(String message) {
+    public WxPayException(String message) {
 
-//         super(message);
-//     }
+        super(message);
+    }
 
-//     public WxPayException(Throwable cause) {
+    public WxPayException(Throwable cause) {
 
-//         super(cause);
-//     }
+        super(cause);
+    }
 
-//     public WxPayException(String message, Throwable cause) {
+    public WxPayException(String message, Throwable cause) {
 
-//         super(message, cause);
-//     }
+        super(message, cause);
+    }
 
-// }
+}

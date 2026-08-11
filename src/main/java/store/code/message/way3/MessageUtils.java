@@ -14,8 +14,6 @@ import kunlun.util.Assert;
 
 import java.lang.reflect.Type;
 
-import static kunlun.util.ObjUtils.cast;
-
 /**
  * The message tools.
  * @author Kahle
@@ -77,7 +75,7 @@ public class MessageUtils {
 
     public static <T> T execute(String handlerName, Object input, String operation, Type type) {
 
-        return cast(execute(handlerName, operation, new Object[]{input, type}));
+        return (T) execute(handlerName, operation, new Object[]{input, type});
     }
 
 }

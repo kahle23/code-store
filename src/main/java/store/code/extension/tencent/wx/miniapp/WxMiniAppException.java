@@ -1,31 +1,31 @@
 package store.code.extension.tencent.wx.miniapp;
 
-// import artoria.exception.UncheckedException;
+import artoria.exception.UncheckedException;
 
-// /**
-//  * WeiXin mini app exception.
-//  * @author Kahle
-//  */
-// public class WxMiniAppException extends UncheckedException {
+/**
+ * WeiXin mini app exception.
+ * @author Kahle
+ */
+public class WxMiniAppException extends UncheckedException {
 
-//     public WxMiniAppException() {
+    public WxMiniAppException() {
 
-//         super();
-//     }
+        super();
+    }
 
-//     public WxMiniAppException(String message) {
+    public WxMiniAppException(String message) {
 
-//         super(message);
-//     }
+        super(message);
+    }
 
-//     public WxMiniAppException(Throwable cause) {
+    public WxMiniAppException(Throwable cause) {
 
-//         super(cause);
-//     }
+        super(cause);
+    }
 
-//     public WxMiniAppException(String message, Throwable cause) {
+    public WxMiniAppException(String message, Throwable cause) {
 
-//         super(message, cause);
-//     }
+        super(message, cause);
+    }
 
-// }
+}

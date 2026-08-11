@@ -1,3 +1,10 @@
+/*
+ * 迁移注记（2026-08-12）：本文件源自旧版 kunlun 的 data.fill 框架（依赖 kunlun.data.fill.DataFiller / FieldConfig /
+ * kunlun.core.function.Function / kunlun.core.function.BiConsumer / kunlun.util.ObjUtil 等），
+ * 这些 API 在 code-store 锁定的 kunlun 版本（io.github.kahle23:kunlun:1.0.0.20240217.beta）中已不存在，无法解析，故整类注释。
+ * 如需启用，需在 code-store 内自建 data.fill 框架，或改用 store.code.data 现有体系。
+ *
+ * ----- 以下为原始迁移代码（整类注释）-----
 package store.code.data.fill.lambda;
 
 import kunlun.core.function.BiConsumer;
@@ -22,7 +29,7 @@ import static kunlun.util.ObjUtil.cast;
 /**
  * ClassicFiller
  * @author Kahle
- */
+ * /
 public class LambdaFiller<T, T1> implements DataFiller<LambdaFillCfg<T, T1>> {
 
     @Override
@@ -65,7 +72,7 @@ public class LambdaFiller<T, T1> implements DataFiller<LambdaFillCfg<T, T1>> {
      * @param cfg cfg
      * @param inputs inputs
      * @param data data
-     */
+     * /
     protected void doFill(LambdaDataCfg<T, T1> cfg, Collection<T> inputs,
                           Map<String, T1> data) {
         // data validation.
@@ -88,19 +95,19 @@ public class LambdaFiller<T, T1> implements DataFiller<LambdaFillCfg<T, T1>> {
     /**
      * The data filling field configuration.
      * @author Kahle
-     */
+     * /
     public static class FieldCfg<T, T1> implements FieldConfig, Serializable {
         /**
          * The query field.
-         */
+         * /
         private Collection<Function<T, Object>> queryFields;
         /**
          * The fill field.
-         */
+         * /
         private BiConsumer<T, Object> fillField;
         /**
          * The data field.
-         */
+         * /
         private Function<T1, Object> dataField;
 
         public FieldCfg(Collection<Function<T, Object>> queryFields, BiConsumer<T, ?> fillField, Function<T1, Object> dataField) {
@@ -179,3 +186,4 @@ public class LambdaFiller<T, T1> implements DataFiller<LambdaFillCfg<T, T1>> {
     }
 
 }
+ */

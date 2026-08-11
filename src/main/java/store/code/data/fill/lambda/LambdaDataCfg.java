@@ -1,3 +1,10 @@
+/*
+ * 迁移注记（2026-08-12）：本文件源自旧版 kunlun 的 data.fill 框架（依赖 kunlun.data.fill.DataFiller / kunlun.core.function.Function /
+ * kunlun.data.fill.support.lambda.LambdaFiller.FieldCfg），这些 API 在 code-store 锁定的 kunlun 版本
+ * （io.github.kahle23:kunlun:1.0.0.20240217.beta）中已不存在，无法解析，故整类注释。
+ * 如需启用，需在 code-store 内自建 data.fill 框架，或改用 store.code.data 现有体系。
+ *
+ * ----- 以下为原始迁移代码（整类注释）-----
 package store.code.data.fill.lambda;
 
 import kunlun.core.function.BiConsumer;
@@ -18,7 +25,7 @@ import static kunlun.util.Assert.notNull;
 /**
  * LambdaDataCfg
  * @author Kahle
- */
+ * /
 public class LambdaDataCfg<T, T1> implements DataFiller.DataConfig, Serializable {
 
     public static <T, T1> LambdaDataCfg<T, T1> of(Function<Collection<?>, Map<String, T1>> dataSupplier) {
@@ -83,3 +90,4 @@ public class LambdaDataCfg<T, T1> implements DataFiller.DataConfig, Serializable
     }
 
 }
+ */

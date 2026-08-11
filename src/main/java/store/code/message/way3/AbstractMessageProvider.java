@@ -17,8 +17,6 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static kunlun.util.ObjUtils.cast;
-
 /**
  * The abstract message provider.
  * @author Kahle
@@ -100,7 +98,7 @@ public abstract class AbstractMessageProvider implements MessageProvider {
     public <T> T send(Object message, String handlerName, Type type) {
         Assert.notNull(message, "Parameter \"message\" must not null. ");
         Assert.notNull(type, "Parameter \"type\" must not null. ");
-        return cast(getMessageHandlerInner(handlerName).send(message, type));
+        return (T) getMessageHandlerInner(handlerName).send(message, type);
     }
 
     @Override
@@ -108,7 +106,7 @@ public abstract class AbstractMessageProvider implements MessageProvider {
         Assert.notBlank(handlerName, "Parameter \"handlerName\" must not blank. ");
         Assert.notNull(condition, "Parameter \"condition\" must not null. ");
         Assert.notNull(type, "Parameter \"type\" must not null. ");
-        return cast(getMessageHandlerInner(handlerName).receive(condition, type));
+        return (T) getMessageHandlerInner(handlerName).receive(condition, type);
     }
 
     @Override

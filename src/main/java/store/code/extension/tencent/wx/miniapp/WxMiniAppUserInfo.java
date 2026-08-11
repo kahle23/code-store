@@ -1,206 +1,152 @@
 package store.code.extension.tencent.wx.miniapp;
 
+import java.io.Serializable;
 
-// import java.io.Serializable;
+/**
+ * WeiXin user information object.
+ * @see <a href="https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/UserInfo.html">User Info</a>
+ * @author Kahle
+ */
+public class WxMiniAppUserInfo implements Serializable {
+    private String unionId;
+    private String openId;
+    private String nickName;
+    private String avatarUrl;
+    private Integer gender;
+    private String country;
+    private String province;
+    private String city;
+    private String language;
+    private Watermark watermark;
 
+    public String getUnionId() {
 
-// /**
-//  * WeiXin user information object.
-//  * @see <a href="https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/UserInfo.html">User Info</a>
-//  * @author Kahle
-//  */
-// public class WxMiniAppUserInfo implements Serializable {
-//     private String unionId;
-//     private String openId;
-//     private String nickName;
-//     private String avatarUrl;
-//     private Integer gender;
-//     private String country;
-//     private String province;
-//     private String city;
-//     private String language;
-//     private Watermark watermark;
+        return unionId;
+    }
 
+    public void setUnionId(String unionId) {
 
-//     public String getUnionId() {
+        this.unionId = unionId;
+    }
 
+    public String getOpenId() {
 
-//         return unionId;
-//     }
+        return openId;
+    }
 
+    public void setOpenId(String openId) {
 
-//     public void setUnionId(String unionId) {
+        this.openId = openId;
+    }
 
+    public String getNickName() {
 
-//         this.unionId = unionId;
-//     }
+        return nickName;
+    }
 
+    public void setNickName(String nickName) {
 
-//     public String getOpenId() {
+        this.nickName = nickName;
+    }
 
+    public String getAvatarUrl() {
 
-//         return openId;
-//     }
+        return avatarUrl;
+    }
 
+    public void setAvatarUrl(String avatarUrl) {
 
-//     public void setOpenId(String openId) {
+        this.avatarUrl = avatarUrl;
+    }
 
+    public Integer getGender() {
 
-//         this.openId = openId;
-//     }
+        return gender;
+    }
 
+    public void setGender(Integer gender) {
 
-//     public String getNickName() {
+        this.gender = gender;
+    }
 
+    public String getCountry() {
 
-//         return nickName;
-//     }
+        return country;
+    }
 
+    public void setCountry(String country) {
 
-//     public void setNickName(String nickName) {
+        this.country = country;
+    }
 
+    public String getProvince() {
 
-//         this.nickName = nickName;
-//     }
+        return province;
+    }
 
+    public void setProvince(String province) {
 
-//     public String getAvatarUrl() {
+        this.province = province;
+    }
 
+    public String getCity() {
 
-//         return avatarUrl;
-//     }
+        return city;
+    }
 
+    public void setCity(String city) {
 
-//     public void setAvatarUrl(String avatarUrl) {
+        this.city = city;
+    }
 
+    public String getLanguage() {
 
-//         this.avatarUrl = avatarUrl;
-//     }
+        return language;
+    }
 
+    public void setLanguage(String language) {
 
-//     public Integer getGender() {
+        this.language = language;
+    }
 
+    public Watermark getWatermark() {
 
-//         return gender;
-//     }
+        return watermark;
+    }
 
+    public void setWatermark(Watermark watermark) {
 
-//     public void setGender(Integer gender) {
+        this.watermark = watermark;
+    }
 
+    /**
+     * WeiXin data watermark.
+     * @author Kahle
+     */
+    public static class Watermark implements Serializable {
+        private String appid;
+        private String timestamp;
 
-//         this.gender = gender;
-//     }
+        public String getAppid() {
 
+            return appid;
+        }
 
-//     public String getCountry() {
+        public void setAppid(String appid) {
 
+            this.appid = appid;
+        }
 
-//         return country;
-//     }
+        public String getTimestamp() {
 
+            return timestamp;
+        }
 
-//     public void setCountry(String country) {
+        public void setTimestamp(String timestamp) {
 
+            this.timestamp = timestamp;
+        }
 
-//         this.country = country;
-//     }
+    }
 
-
-//     public String getProvince() {
-
-
-//         return province;
-//     }
-
-
-//     public void setProvince(String province) {
-
-
-//         this.province = province;
-//     }
-
-
-//     public String getCity() {
-
-
-//         return city;
-//     }
-
-
-//     public void setCity(String city) {
-
-
-//         this.city = city;
-//     }
-
-
-//     public String getLanguage() {
-
-
-//         return language;
-//     }
-
-
-//     public void setLanguage(String language) {
-
-
-//         this.language = language;
-//     }
-
-
-//     public Watermark getWatermark() {
-
-
-//         return watermark;
-//     }
-
-
-//     public void setWatermark(Watermark watermark) {
-
-
-//         this.watermark = watermark;
-//     }
-
-
-//     /**
-//      * WeiXin data watermark.
-//      * @author Kahle
-//      */
-//     public static class Watermark implements Serializable {
-//         private String appid;
-//         private String timestamp;
-
-
-//         public String getAppid() {
-
-
-//             return appid;
-//         }
-
-
-//         public void setAppid(String appid) {
-
-
-//             this.appid = appid;
-//         }
-
-
-//         public String getTimestamp() {
-
-
-//             return timestamp;
-//         }
-
-
-//         public void setTimestamp(String timestamp) {
-
-
-//             this.timestamp = timestamp;
-//         }
-
-
-//     }
-
-
-// }
-
+}

@@ -9,7 +9,7 @@ import kunlun.exception.ExceptionUtils;
 import kunlun.message.support.AbstractClassicMessageHandler;
 import kunlun.message.support.mq.rocketmq.RocketMqMessage;
 import kunlun.util.Assert;
-import kunlun.util.CollUtils;
+import kunlun.util.CollectionUtils;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
@@ -38,7 +38,7 @@ public class RocketMqMessageHandler extends AbstractClassicMessageHandler {
             Integer flag = mqMessage.getFlag();
             byte[] body = mqMessage.getBody();
             Message result = new Message(topic, tags, null, body);
-            if (CollUtils.isNotEmpty(keys)) {
+            if (CollectionUtils.isNotEmpty(keys)) {
                 result.setKeys(keys);
             }
             if (flag != null) {
